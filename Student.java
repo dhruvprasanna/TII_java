@@ -3,9 +3,7 @@ public class Student {
     int age;
 
     public Student(String name, int age, boolean isEligible, String college) {
-        this.name = name;
-        this.age = age;
-        this.isEligible = isEligible;
+        this(name,age,isEligible);
         this.college = college;
     }
 
