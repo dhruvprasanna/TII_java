@@ -9,6 +9,15 @@ public class Excp {
         else {
             System.out.println("running");
         }
+        someMethod();
 
+    }
+
+    private static void someMethod() {
+        int j = 1;
+
+        for (int i = 1;i < 1000;i+=50){
+            j *= i;
+        }
     }
 }
