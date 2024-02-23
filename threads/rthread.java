@@ -8,7 +8,7 @@ public class rthread implements Runnable{
             while (5 < 1000){
                 Thread.sleep(200);
                 i*=5;
-                System.out.println(i + " C");
+                System.out.println(i + " C "+Thread.currentThread().isDaemon());
             }
         } catch (Exception e) {
             throw new RuntimeException(e);

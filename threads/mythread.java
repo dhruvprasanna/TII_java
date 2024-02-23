@@ -8,7 +8,7 @@ public class mythread extends Thread{
             try {
                 Thread.sleep(100);
                 i+=i;
-                System.out.println(i + " A");
+                System.out.println(i + " A " + Thread.currentThread().isDaemon());
             } catch (InterruptedException e) {
                 throw new RuntimeException(e);
             }
